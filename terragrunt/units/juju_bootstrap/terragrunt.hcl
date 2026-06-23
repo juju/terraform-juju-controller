@@ -3,8 +3,7 @@ include "root" {
 }
 
 terraform {
-  source  = "juju/juju-controller/juju"
-  version = values.version
+  source = "tfr:///juju/juju-controller/juju?version=${values.version}"
 }
 
 dependencies {
